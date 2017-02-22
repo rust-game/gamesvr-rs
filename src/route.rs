@@ -13,6 +13,5 @@ struct SimpleRoute{
 impl Route for SimpleRoute{
     fn set(){}
     fn get(){
-
     }
 }
