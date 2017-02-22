@@ -24,5 +24,4 @@ impl  Logger for SimpleLogger{
     fn on(){}
     fn off(){}
     fn is_on(){}
-
 }
