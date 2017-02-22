@@ -1,12 +1,7 @@
 
-pub trait Handle {
-    fn handle(context:Context);
-}
-
 
 pub struct   Server {
     middleware Middleware
-    handlers   []Handle
 }
 
 //服务器跑起来的方法
