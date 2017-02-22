@@ -1,5 +1,9 @@
 # A fast,safety,distributed game server framework for Rustlang
 Server is a fast, scalable game server framework for Rustlang. It provides the basic development framework and many related components, including libraries and tools. Server is also suitable for real-time web applications; its distributed architecture makes server scale better than other real-time web frameworks.
+
+#status (develop)
+**don't use  production ,it's experiment**
+
 #Features
 * fast
 * safety
