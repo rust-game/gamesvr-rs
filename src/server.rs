@@ -5,6 +5,7 @@ use {MiddlewareStack,Middleware,ModuleStack};
 //一个服务必须有且只有一个传输协议
 //一个服务必须有且只有一个解包的协议
 //一个服务有零个或者1个压缩协议
+//一个服务必须有且只有一个路由
 //TODO 关于加密协议 有点不知道放哪 --哪一步都可能要加密
 pub trait   Server {
     //运行服务器
@@ -21,6 +22,8 @@ pub trait   Server {
 
     fn use_serialize<M:Middleware>(&mut self,m:M);
 
+    fn use_route<M:Middleware>(&mut self,m:M);
+
     //挂载中间件
     fn add_middleware<M:Middleware>(&mut self,m:M);
    //挂载模块
@@ -28,13 +31,14 @@ pub trait   Server {
 
     fn new()->Server;
 
-}
-
-
-//构建MiddlewareStack
-fn build()->MiddlewareStack{
+    //构建
+    fn build()->MiddlewareStack{
+    }
 
 }
+
+
+
 
 
 //服务器跑起来的方法
