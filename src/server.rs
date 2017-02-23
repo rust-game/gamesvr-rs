@@ -14,7 +14,7 @@ pub trait   Server {
     fn run(port:&'static str,ip:&'static str);
 
     //设置日志记录的
-    fn use_logger<M:Middleware>(&mut self ,m:M,level:String);
+    fn use_logger<M:Middleware>(&mut self ,m:M,String);
 
     fn use_transfer<M:Middleware>(&mut self,m:M);
 

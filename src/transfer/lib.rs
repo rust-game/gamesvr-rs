@@ -1,2 +1,1 @@
-pub  use transfer::{Transfer};
-mod transfer;
+use super::{Transfer};
