@@ -1,3 +1,4 @@
+use super::{Serializer};
 pub struct ProtobufSerializer {
 
 }

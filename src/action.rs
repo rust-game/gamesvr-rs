@@ -7,3 +7,20 @@ pub trait Action {
     //after
     fn after();
 }
+
+//方法栈
+pub struct ActionStack{
+    actions: Vec<Box<Action>>,
+}
+
+impl ActionStack{
+    fn add_action<A:Action>(&mut self,a:A){
+        self.actions.push(a);
+    }
+
+    pub fn new()->ActionStack{
+        ActionStack{
+            actions:Vec::new()
+        }
+    }
+}

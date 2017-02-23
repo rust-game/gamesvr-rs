@@ -7,8 +7,6 @@ pub trait Transfer{
     //open
     fn open();
     //close
-
-    fn close_before();
     fn close();
     fn close_after();
 }
