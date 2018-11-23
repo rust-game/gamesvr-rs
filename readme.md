@@ -1,19 +1,16 @@
-# A fast,safety,distributed game server framework for Rustlang
-Server is a fast, scalable game server framework for Rustlang. It provides the basic development framework and many related components, including libraries and tools. Server is also suitable for real-time web applications; its distributed architecture makes server scale better than other real-time web frameworks.
+# A fast,safety,distributed game server framework for Rust
+Server is a fast, scalable game server framework for Rust. It provides the basic development framework and many related components, including libraries and tools. Server is also suitable for real-time web applications; its distributed architecture makes server scale better than other real-time web frameworks.
 
-#status (develop)
-**don't use  production ,it's experiment**
+# status (develop)
+** don't use  production ,it's experiment **
 
-#Features
+# Features
 * fast
 * safety
 * distributed
-* distributed
 
-#License
+# License
 (The MIT License)
-
-Copyright (c) 2017 XD, Inc. and other contributors
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

@@ -1,5 +1,0 @@
-#example
-* hello
-* login
-* updatePlayer
-

@@ -1,6 +1,7 @@
 [package]
-name = "server"
+edition = "2018"
+name = "leaf"
 version = "0.0.1"
-authors = ["wsc <wsc@xindong.com>"]
+authors = ["wsc <wangtxxl@gmail.com>"]
 
 [dependencies]

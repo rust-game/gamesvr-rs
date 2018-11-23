@@ -1,4 +1,4 @@
-[root]
-name = "server"
+[[package]]
+name = "leaf"
 version = "0.0.1"
 

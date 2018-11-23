@@ -1,18 +1,3 @@
-
-
-//定义
-//
-pub trait Context {
-
-
-}
-
-//默认
-pub struct SimpleContext {
-
-}
-
-//实现
-impl  Session for SimpleContext{
-
+pub struct Context<Data>{
+    data:Data
 }

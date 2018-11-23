@@ -1,27 +1,22 @@
-use self::Context;
+use response::Response;
+use request::Request;
+use std::result::Result;
 
-pub trait Middleware{
-    fn invoke<T:Context>(context:T){
-    }
-}
-
-//调用的一个栈
-pub struct MiddlewareStack{
-    handlers: Vec<Box<Middleware>>,
-}
-
-impl MiddlewareStack{
-    pub  fn add<M:Middleware>(&mut self,m:M){
-        self.handlers.push(m)
-    }
-    //调用这个栈
-    pub fn invoke<T>(&self,context:T) where T:Context{
+pub trait Middleware<Data>: 'static {
+    /// Method is called when request is ready. It may return
+    /// future, which should resolve before next middleware get called.
+    fn start(&self, req: &Request<Data>)  {
 
     }
 
-    pub fn new()->MiddlewareStack{
-        MiddlewareStack{
-            handlers:Vec::new()
-        }
+    /// Method is called when handler returns response,
+    /// but before sending http message to peer.
+    fn response(&self, req: &Request<Data>, resp: Response)  {
+
+    }
+
+    /// Method is called after body stream get sent to peer.
+    fn finish(&self, req: &Request<S>, resp: &Response) -> Finished {
+        Finished::Done
     }
 }
