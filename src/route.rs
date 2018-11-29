@@ -1,5 +1,10 @@
 use std::collections::HashMap;
 
-pub struct Route<K, V> {
-    map: HashMap<K, V>
+/// route
+pub trait Route<K,V> {
+    fn set(K,V){
+
+    }
+    fn get(K) -> V{
+    }
 }
